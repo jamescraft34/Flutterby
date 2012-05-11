@@ -1,0 +1,98 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<TableLayout android:id="@+id/TableLayoutNavigation" 
+		android:layout_height="wrap_content" 
+		android:layout_marginBottom="15dp" 
+		android:layout_width="fill_parent" 
+		android:orientation="horizontal" 
+		android:visibility="invisible"
+		android:layout_centerHorizontal="true" 
+		android:layout_alignParentBottom="true"
+		android:layout_gravity="bottom|center_horizontal" 
+		android:gravity="bottom|center_horizontal"
+		>
+		
+		<TableRow 		android:layout_height="fill_parent"  		
+		android:layout_width="fill_parent" >
+			
+			<RelativeLayout 
+				android:layout_height="fill_parent" 
+				android:layout_width="fill_parent" 
+				android:clipChildren="false" 
+				android:layout_weight="1" android:layout_marginLeft="10dp">		
+
+				<ImageButton android:id="@+id/ButtonOptionLeft" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" 
+					android:clickable="true" 
+					android:layout_centerHorizontal="true"
+					android:visibility="invisible" 
+					android:soundEffectsEnabled="false"
+					android:background="@null"/>
+					
+				<TextView android:id="@+id/TextViewLeftDescription"  
+					android:layout_height="wrap_content"  
+					android:layout_width="wrap_content" 
+					android:textAppearance="@style/NarriationTextStyleLarge" 
+					android:layout_below="@+id/ButtonOptionLeft" 
+					android:layout_centerHorizontal="true" 
+					android:background="@drawable/rounded_edges"
+					android:visibility="invisible"/>
+								
+			</RelativeLayout>
+
+			<RelativeLayout 
+				android:layout_height="fill_parent" 
+				android:layout_width="fill_parent"
+				android:clipChildren="false" android:layout_weight="1">		
+
+				<ImageButton android:id="@+id/ButtonOptionCenter" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" 
+					android:clickable="true"
+					android:layout_centerHorizontal="true"
+					android:visibility="invisible"
+					android:soundEffectsEnabled="false"
+					android:background="@null"/>
+					
+				<TextView android:id="@+id/TextViewCenterDescription"  
+					android:background="@drawable/rounded_edges" 
+					android:layout_height="wrap_content"  
+					android:layout_width="wrap_content" 
+					android:textAppearance="@style/NarriationTextStyleLarge" 
+					android:layout_below="@+id/ButtonOptionCenter" 
+					android:layout_centerHorizontal="true"
+					android:visibility="invisible"/>
+				
+			</RelativeLayout>
+			
+			<RelativeLayout 
+				android:layout_height="fill_parent" 
+				android:layout_width="fill_parent" 
+				android:clipChildren="false" android:layout_weight="1" android:layout_marginRight="10dp">		
+				
+				<ImageButton android:id="@+id/ButtonOptionRight" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" 
+					android:clickable="true"
+					android:layout_centerHorizontal="true"
+					android:visibility="invisible"
+					android:soundEffectsEnabled="false"
+					android:background="@null"/>
+					
+				<TextView android:id="@+id/TextViewRightDescription"  
+					android:background="@drawable/rounded_edges" 
+					android:layout_height="wrap_content"  
+					android:layout_width="wrap_content" 
+					android:textAppearance="@style/NarriationTextStyleLarge" 
+					android:layout_below="@+id/ButtonOptionRight" 
+					android:layout_centerHorizontal="true"
+					android:visibility="invisible"/>
+					
+			</RelativeLayout>
+		
+		</TableRow>
+	</TableLayout>
+
+</merge>
+	

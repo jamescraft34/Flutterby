@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Flutterby</string>
+    
+    <string name="createNarration">&lt;Create new profile&gt;</string>
+    <string name="defaultNarration">&lt;Flutterby&gt;</string>
+    
+    <string name="sdCardNotAvailable">Device SD Card required to perform this action.</string>
+
+    <string name="narrationProfileLimitError">Unable to create new profile, a maximum of 3 allowed.</string>
+    <string name="narrationProfileRootFolderError">An error occurred trying to create root narration profile folder.</string>
+    
+	<color name="white">#ffffff</color>
+	<color name="black">#000000</color>
+	
+	<color name="defaultKarokeTextColor">#fdf604</color><!-- #fb1c04</color-->	
+	<color name="yellowKarokeTextColor">#fdf604</color>	
+	<color name="roseKarokeTextColor">#e81080</color>	
+	<color name="redKarokeTextColor">#ed1c24</color>	
+		
+	<color name="translucent_clear">#00000000</color>	
+ 
+ 	<drawable name="narrationsetupbackground">#330000</drawable> 
+	
+	<string name="narrationTextOn">Text On</string>
+	<string name="narrationTextOff">Text Off</string>
+	<string name="narrationAudioOn">Audio On</string>
+	<string name="narrationAudioOff">Audio Off</string>
+	<string name="backgroundAudioOn">Audio On</string>
+	<string name="backgroundAudioOff">Audio Off</string>
+	<string name="nomic">Narration recording not supported on this device.</string>
+	<string name="nookdevice">nook</string>
+</resources>

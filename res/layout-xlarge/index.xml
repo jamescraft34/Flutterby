@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.craftysoft.flutterbyandmarguerite.Page.Index 
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:id="@+id/RootMain">
+    	<RelativeLayout android:id="@+id/Root" android:layout_width="fill_parent" android:layout_height="fill_parent"> 
+			<TableLayout android:id="@+id/TableLayout01"
+			 android:layout_width="wrap_content"
+			 android:layout_height="wrap_content" 
+			 android:layout_alignParentRight="true" 
+			 android:orientation="vertical" 
+			 android:layout_centerVertical="true">
+		 		 <TableRow android:paddingBottom="15dp" android:paddingTop="15dp">  
+					 <Button 
+						 android:id="@+id/ButtonRead"
+						 android:layout_width="wrap_content"
+						 android:layout_height="wrap_content"
+						 android:clickable="true" 
+						 android:gravity="center_vertical|center_horizontal" 
+						 android:background="@drawable/readbuttonxmllarge" android:soundEffectsEnabled="false"/>					
+				</TableRow> 
+				<TableRow android:paddingBottom="15dp"> 	
+					<Button 
+						 android:id="@+id/ButtonIndex"
+						 android:layout_width="wrap_content"
+						 android:layout_height="wrap_content"
+						 android:clickable="true" 
+						 android:gravity="center_vertical|center_horizontal" android:background="@drawable/indexbuttonxmllarge" android:soundEffectsEnabled="false"/>
+			</TableRow> 
+				<TableRow android:paddingBottom="15dp" android:paddingRight="3dp"> 	
+					
+					<Button 
+						 android:id="@+id/ButtonGoBookmark"
+						 android:layout_width="wrap_content"
+						 android:layout_height="wrap_content"
+						 android:clickable="true" 
+						 android:gravity="center_vertical|center_horizontal" android:background="@drawable/bookmarkbuttonxmllarge" android:soundEffectsEnabled="false"/>
+				 </TableRow>
+				<TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingBottom="15dp">
+									<Button 
+						 android:layout_width="wrap_content"
+						 android:layout_height="wrap_content"
+						 android:clickable="true" 
+						 android:gravity="center_vertical|center_horizontal" android:id="@+id/ButtonHelp" android:background="@drawable/settingsbuttonxmllarge"  android:soundEffectsEnabled="false"/>
+				
+				</TableRow>
+ 			</TableLayout>  
+    	</RelativeLayout>
+ </com.craftysoft.flutterbyandmarguerite.Page.Index>
+<!-- com.craftysoft.flutterbyandmarguerite.Pages.Index -->

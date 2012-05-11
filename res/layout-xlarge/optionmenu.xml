@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" 
+  android:layout_marginRight="5dp" 
+  android:layout_marginLeft="5dp" 
+  android:layout_marginBottom="10dp" 
+  android:id="@+id/root" 
+  android:layout_marginTop="10dp" android:paddingLeft="5dp">
+
+
+	<TextView 	android:id="@+id/TextViewHeader"  	
+				android:layout_alignParentLeft="true" 
+			 	android:text="Settings" 
+			 	android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_marginLeft="7dp" style="@style/MenuTextStyleLarge" android:layout_marginTop="30dp">
+ 	</TextView>
+ 	
+ 	<Button android:id="@+id/ButtonCloseOMMain" 
+ 	android:layout_width="wrap_content" 
+ 	android:layout_height="wrap_content" 
+ 	android:background="@drawable/closelarge" 
+ 	android:clickable="true" 
+ 	android:layout_alignParentRight="true" 
+ 	android:layout_marginTop="10dp"
+ 	android:layout_marginRight="7dp" android:soundEffectsEnabled="true"></Button> 
+
+	<View 
+		android:layout_height="4dp" 
+		android:layout_width="fill_parent" 
+		android:id="@+id/ViewLine" 
+		android:background="@drawable/solidlineshape" android:layout_below="@+id/ButtonCloseOMMain"/>
+	
+
+  	<TableLayout  
+		android:layout_height="wrap_content" 
+		android:id="@+id/tableRoot" 
+		android:layout_width="wrap_content" 
+		android:layout_centerInParent="true"> 	
+		 <TableRow android:paddingTop="90dp">  
+
+			<LinearLayout android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" android:orientation="vertical">
+				<Button android:id="@+id/ButtonNarrationTextOnOff" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" 
+					android:layout_gravity="center_horizontal" android:clickable="true" android:background="@drawable/textlarge" android:soundEffectsEnabled="false"/>
+	
+				<TextView android:text="Text On"
+				android:id="@+id/TextViewNarrationTextOnOff"  
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" style="@style/IconTextStyleLarge" 
+					android:layout_marginTop="3dp"
+					android:layout_gravity="center_horizontal"/>
+			</LinearLayout>
+			
+			<LinearLayout android:layout_width="wrap_content" 
+						android:layout_height="wrap_content" 
+						android:layout_marginLeft="100dp" 
+						android:layout_marginRight="50dp"
+						android:orientation="vertical">
+						
+				<Button android:id="@+id/ButtonTextZoom" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"  
+					android:layout_gravity="center_horizontal" android:clickable="true" android:background="@drawable/zoominlarge" android:soundEffectsEnabled="false"/>
+	
+				<TextView android:text="Text Size"  
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" style="@style/IconTextStyleLarge" 
+					android:layout_marginTop="3dp"
+					android:layout_gravity="center_horizontal"/>
+			</LinearLayout>
+			
+
+			<LinearLayout android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" android:orientation="vertical"
+				android:layout_marginLeft="50dp" 
+				android:layout_marginRight="100dp">
+
+				<Button android:id="@+id/ButtonAlias" 
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content" 
+						android:layout_gravity="center_horizontal" android:clickable="true" android:background="@drawable/aliaslarge" android:soundEffectsEnabled="false"/>
+	
+				<TextView android:text="Character"  
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" style="@style/IconTextStyleLarge" 
+					android:layout_marginTop="3dp"
+					android:layout_gravity="center_horizontal"/>
+				<TextView android:text="Alias"  
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" style="@style/IconTextStyleLarge" 
+					android:layout_gravity="center_horizontal"/>
+
+			</LinearLayout>
+
+
+			
+			
+			<LinearLayout android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" android:orientation="vertical">
+							
+				<Button android:id="@+id/ButtonHome" 
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal" android:clickable="true" android:background="@drawable/homelarge" android:soundEffectsEnabled="false"/>
+
+				<TextView android:text="Home"  
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" style="@style/IconTextStyleLarge" 
+					android:layout_marginTop="3dp"
+					android:layout_gravity="center_horizontal"/>
+			</LinearLayout>
+			
+		</TableRow> 
+		 <TableRow android:paddingTop="60dp">  
+			<LinearLayout android:layout_width="wrap_content" 
+						android:layout_height="wrap_content" 
+						android:orientation="vertical">
+						
+				<Button android:id="@+id/ButtonNarrationAudioOnOff" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" 
+					android:layout_gravity="center_horizontal" android:clickable="true" android:background="@drawable/speechlarge" android:soundEffectsEnabled="false"/>
+				<TextView android:text="Narration"  
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" style="@style/IconTextStyleLarge" 
+					android:layout_marginTop="3dp"
+					android:layout_gravity="center_horizontal"/>
+				<TextView android:text="Audio On"
+				android:id="@+id/TextViewNarrationAudioOnOff"  
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" style="@style/IconTextStyleLarge" 
+					android:layout_gravity="center_horizontal"/>
+
+			</LinearLayout>
+			
+
+			
+			<LinearLayout android:layout_width="wrap_content" 
+						android:layout_height="wrap_content" 
+						android:layout_marginLeft="100dp" 
+						android:layout_marginRight="50dp"
+						android:orientation="vertical">
+				<Button android:id="@+id/ButtonMusic" 
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content" 
+						android:layout_gravity="center_horizontal" 
+						android:clickable="true" android:background="@drawable/soundlarge" android:soundEffectsEnabled="false"/>	
+				<TextView android:text="Background"  
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" style="@style/IconTextStyleLarge" 
+					android:layout_marginTop="3dp"
+					android:layout_gravity="center_horizontal"/>
+				<TextView android:text="Audio On"  
+				android:id="@+id/TextViewBackgroundAudioOnOff"
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" style="@style/IconTextStyleLarge" 
+					android:layout_gravity="center_horizontal"/>
+			</LinearLayout>
+			
+			
+			<LinearLayout android:layout_width="wrap_content" 
+						android:layout_height="wrap_content" 
+						android:layout_marginLeft="50dp" 
+						android:layout_marginRight="100dp"
+						android:orientation="vertical">				
+						
+				<Button android:id="@+id/ButtonNarrationRecord" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"  
+					android:layout_gravity="center_horizontal" 
+					android:clickable="true" android:background="@drawable/microphonelarge" android:soundEffectsEnabled="false"/>
+	
+				<TextView android:text="Narration"  
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" style="@style/IconTextStyleLarge" 
+					android:layout_marginTop="3dp"
+					android:layout_gravity="center_horizontal"/>
+				<TextView android:text="Disabled"  
+				android:id="@+id/TextViewNarrationDisabled"
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" style="@style/IconTextStyleLarge" 
+					android:layout_gravity="center_horizontal" android:visibility="invisible"/>
+			</LinearLayout>
+			
+			
+			<LinearLayout android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" android:orientation="vertical">
+							
+				<Button android:id="@+id/ButtonAbout" 
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal" android:clickable="true" android:background="@drawable/aboutlarge" android:soundEffectsEnabled="false"/>
+
+				<TextView android:text="About"  
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" style="@style/IconTextStyleLarge" 
+					android:layout_marginTop="3dp"
+					android:layout_gravity="center_horizontal"/>
+			</LinearLayout>
+		 </TableRow>
+	</TableLayout>  
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+		
+	<RelativeLayout android:id="@+id/RelativeLayoutTextNarration" 
+		android:layout_height="wrap_content" 
+		android:background="@drawable/rounded_edges" 
+		android:layout_marginRight="10dp" 
+		android:paddingLeft="10dp" 
+		android:paddingRight="10dp" 
+		android:layout_width="fill_parent" 
+		android:layout_marginLeft="10dp" 
+		android:layout_gravity="bottom|center_horizontal" 
+		android:layout_marginBottom="3dp" 
+		android:gravity="bottom|center_horizontal"
+		android:visibility="invisible">
+
+		<com.craftysoft.flutterbyandmarguerite.MyScrollView android:layout_height="64dp" android:layout_width="wrap_content" android:id="@+id/ScrollViewText" android:fadeScrollbars="false">
+			<TextView android:id="@+id/TextViewNarriation"  android:layout_height="wrap_content"  android:textAppearance="@style/NarriationTextStyle" android:layout_width="fill_parent"/>
+		</com.craftysoft.flutterbyandmarguerite.MyScrollView>
+		
+	</RelativeLayout>
+
+</merge>

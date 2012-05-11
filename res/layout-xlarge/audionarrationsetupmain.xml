@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" 
+  android:layout_marginRight="5dp" 
+  android:layout_marginLeft="5dp" 
+  android:layout_marginBottom="10dp" 
+  android:layout_marginTop="10dp"
+  android:paddingLeft="5dp" xmlns:android="http://schemas.android.com/apk/res/android">  
+
+	<TextView 	android:id="@+id/TextViewHeader" 
+				android:layout_alignParentLeft="true" 
+			 	android:text="Narration" 
+			 	style="@style/MenuTextStyleLarge" 
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_marginTop="28dp" android:layout_marginLeft="7dp">
+ 	</TextView>
+ 		<TextView android:text="- Swipe/Tap Page to Select" 
+			 	style="@style/MenuTextStyle" 
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_marginLeft="6dp"
+				android:layout_marginTop="40dp" android:layout_toRightOf="@+id/TextViewHeader">
+ 	</TextView>
+ 	
+
+	<Button android:id="@+id/ButtonCloseAnMain" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:background="@drawable/closelarge" 
+		android:clickable="true" 
+		android:layout_alignParentRight="true" 
+		android:layout_marginTop="10dp"
+		android:layout_marginRight="7dp" android:soundEffectsEnabled="true"/>
+
+	<View 
+		android:layout_height="4dp" 
+		android:layout_width="fill_parent" 
+		android:id="@+id/ViewLine" 
+		android:background="@drawable/solidlineshape" 
+		android:layout_below="@+id/ButtonCloseAnMain"/>
+		
+	<TableLayout  
+		android:layout_height="wrap_content" 
+		android:layout_width="wrap_content" 
+		android:layout_centerInParent="true">
+	
+		<TableRow 
+		android:layout_height="wrap_content" 
+		android:layout_width="wrap_content" 
+		android:paddingTop="120dp">
+		
+		<LinearLayout  
+			android:layout_height="fill_parent" 
+			android:layout_width="wrap_content" android:orientation="vertical"
+			android:gravity="center">
+			<ImageButton android:layout_height="wrap_content"  android:id="@+id/imageButtonPlay" 
+			android:layout_width="wrap_content" android:background="@drawable/playdisabledlarge" android:adjustViewBounds="true"  android:clickable="true" android:soundEffectsEnabled="true"></ImageButton>
+			
+								<TextView android:text="Play"  
+						android:id="@+id/textviewPlay" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" style="@style/IconTextStyleLarge" 
+					android:layout_marginTop="3dp"
+					android:layout_gravity="center_horizontal"/>
+		
+			
+		</LinearLayout>
+
+		<RelativeLayout  
+			android:layout_width="fill_parent"    
+			android:layout_height="wrap_content" android:layout_marginLeft="5dp"
+			android:layout_marginRight="5dp">
+		
+			<com.craftysoft.flutterbyandmarguerite.MyGallery xmlns:android="http://schemas.android.com/apk/res/android"     
+			android:id="@+id/gallery"    
+			android:layout_width="fill_parent"    
+			android:layout_height="wrap_content" android:layout_marginLeft="5dp"
+			android:layout_marginRight="5dp"/>
+			
+		
+			<TextView 
+			android:id="@+id/textViewPrompter" 
+			android:layout_height="wrap_content" 
+			android:layout_width="wrap_content" 
+			android:background="@drawable/rounded_edges_dark" 
+			android:paddingRight="10dp" 
+			android:paddingLeft="10dp" 
+			android:layout_centerInParent="true"
+			android:scrollbars="vertical"
+			android:visibility="invisible" android:textAppearance="@style/NarriationTextStyleLarge" 
+			android:layout_centerVertical="true" android:layout_centerHorizontal="true" 
+			android:scrollbarAlwaysDrawVerticalTrack="true" android:scrollbarDefaultDelayBeforeFade="10000"></TextView>
+			 	
+
+		</RelativeLayout>
+
+		<LinearLayout  
+			android:layout_height="fill_parent" 
+			android:layout_width="wrap_content" android:orientation="vertical"
+			android:gravity="center">
+			<ImageButton android:layout_height="wrap_content"  android:id="@+id/imageButtonRecord" 
+			android:layout_width="wrap_content" 
+			android:background="@drawable/recordlarge" android:clickable="true" 
+			android:soundEffectsEnabled="true"></ImageButton>
+		
+					<TextView android:text="Record"  
+						android:id="@+id/textviewRecord" 
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" style="@style/IconTextStyleLarge" 
+					android:layout_marginTop="3dp"
+					android:layout_gravity="center_horizontal"/>
+		
+		</LinearLayout>
+
+		</TableRow>
+	</TableLayout>
+</RelativeLayout>

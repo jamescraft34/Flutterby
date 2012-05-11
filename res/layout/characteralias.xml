@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" 
+  android:layout_marginRight="5dp" 
+  android:layout_marginLeft="5dp" 
+  android:layout_marginBottom="10dp" 
+  android:layout_marginTop="10dp"
+  android:paddingLeft="5dp">  
+
+	<TextView 	android:id="@+id/TextViewHeader" 
+				android:layout_alignParentLeft="true" 
+			 	android:text="Character Alias" 
+			 	style="@style/MenuTextStyle" 
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_marginTop="14dp" 
+				android:layout_marginLeft="7dp">
+ 	</TextView>
+
+	<Button android:id="@+id/ButtonClose" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="@drawable/close" android:clickable="true" android:layout_alignParentRight="true" android:layout_marginTop="10dp" android:layout_marginRight="7dp" android:soundEffectsEnabled="true"></Button>
+
+	<View 
+		android:layout_height="4dp" 
+		android:layout_width="fill_parent" 
+		android:id="@+id/ViewLine" 
+		android:background="@drawable/solidlineshape" 
+		android:layout_below="@+id/ButtonClose"/>
+		
+	<TableLayout  
+		android:layout_height="wrap_content"  
+		android:layout_width="fill_parent" 
+		android:paddingLeft="10dp" android:layout_below="@+id/ViewLine" 
+		android:layout_marginTop="20dp"
+		android:id="@+id/Table1">
+	
+		<TableRow android:layout_height="wrap_content" android:layout_width="fill_parent">
+			
+				<ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" 
+				android:background="@drawable/flutterby" android:layout_gravity="center_vertical"/>
+				
+				<TextView android:layout_height="wrap_content" 
+						android:text="Flutterby:" 
+						android:layout_width="wrap_content"
+						style="@style/AliasTextViewStyle" 
+						android:layout_marginRight="10dp" android:paddingRight="20dp"/>
+						
+				<EditText android:id="@+id/EditTextFlutterbyAlias" 
+					android:layout_height="wrap_content" 
+					android:layout_width="wrap_content" 
+					 
+					android:maxLength="10" 
+					android:inputType="textCapSentences" android:width="280dp" 
+					style="@style/AliasEditViewStyle"
+					android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"/>
+					
+				<CheckBox 
+					android:text="" 
+					android:layout_height="wrap_content" 
+					android:layout_width="wrap_content" 
+					android:id="@+id/CheckBoxFlutterby" 
+					android:layout_marginLeft="5dp"/>
+		</TableRow>
+	</TableLayout>
+	<TableLayout  
+		android:layout_height="wrap_content"  
+		android:layout_width="fill_parent" 
+		android:paddingLeft="10dp" 
+		android:layout_below="@+id/Table1" 
+		android:id="@+id/Table2"
+		android:layout_marginTop="3dp">
+
+		<TableRow android:layout_height="wrap_content" android:layout_width="fill_parent">
+
+				<TextView android:layout_height="wrap_content" 
+						android:text="Gender:" 
+						android:layout_width="wrap_content"
+						 android:layout_marginRight="10dp" 
+						 style="@style/MenuTextStyleSmall" 
+						 android:layout_gravity="center_vertical" 
+						 android:layout_marginLeft="30dp"/>
+
+					<RadioGroup 
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content" 
+						android:orientation="horizontal" 
+						android:id="@+id/RadioGroupFlutterbyGender">
+						
+						<RadioButton android:id="@+id/RadioButtonFlutterbyGirl" 
+							android:text="girl" 
+							android:layout_height="wrap_content" 
+							android:layout_width="wrap_content"
+							style="@style/MenuTextStyleSmall" 
+							android:checked="true" 
+							android:layout_marginRight="10dp"></RadioButton>
+	
+						<RadioButton android:id="@+id/RadioButtonFlutterbyBoy" 
+							android:text="boy" 
+							android:layout_height="wrap_content" 
+							android:layout_width="wrap_content"
+							style="@style/MenuTextStyleSmall"></RadioButton>
+					</RadioGroup>
+		</TableRow>
+		</TableLayout>
+		<TableLayout  
+			android:layout_height="wrap_content"  
+			android:layout_width="fill_parent" 
+			android:paddingLeft="10dp" 
+			android:layout_below="@+id/Table2" 
+			android:layout_marginTop="3dp"
+			android:id="@+id/Table3">
+
+				<TableRow 
+					android:layout_height="wrap_content" 
+					android:layout_width="fill_parent" 
+					android:layout_marginTop="35dp">
+
+						<ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+						 android:layout_gravity="center_vertical"
+						 android:background="@drawable/marguerite"/>
+					
+						<TextView android:layout_height="wrap_content" 
+								android:text="Marguerite:" 
+								android:layout_width="wrap_content"
+								 style="@style/AliasTextViewStyle" 
+								 android:layout_marginRight="10dp"/>
+
+								
+						<EditText android:id="@+id/EditTextMargueriteAlias" 
+							android:layout_height="wrap_content" 
+							android:layout_width="wrap_content" 
+							android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+							android:maxLength="10" 
+							android:inputType="textCapSentences" android:width="280dp" style="@style/AliasEditViewStyle"></EditText>
+							
+						<CheckBox 
+							android:text="" 
+							android:layout_height="wrap_content" 
+							android:layout_width="wrap_content" 
+							android:id="@+id/CheckBoxMarquerite" 
+							android:layout_marginLeft="5dp"></CheckBox>
+				</TableRow>
+		</TableLayout>
+		<TableLayout  
+			android:layout_height="wrap_content"  
+			android:layout_width="fill_parent" 
+			android:paddingLeft="10dp" 
+			android:layout_below="@+id/Table3" 
+			android:layout_marginTop="3dp"
+			android:id="@+id/Table4">
+		
+			<TableRow android:layout_height="wrap_content" android:layout_width="fill_parent">
+
+				<TextView android:layout_height="wrap_content" 
+						android:text="Gender:" 
+						android:layout_width="wrap_content"
+						android:layout_marginRight="10dp" 
+						style="@style/MenuTextStyleSmall" 
+						android:layout_gravity="center_vertical" 
+						android:layout_marginLeft="30dp"/>
+
+					<RadioGroup 
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content" 
+						android:orientation="horizontal" 
+						android:id="@+id/RadioGroupMargueriteGender">
+						
+						<RadioButton android:id="@+id/RadioButtonMargueriteGirl" 
+							android:text="girl" 
+							android:layout_height="wrap_content" 
+							android:layout_width="wrap_content"
+							style="@style/MenuTextStyleSmall" 
+							android:checked="true" 
+							android:layout_marginRight="10dp"></RadioButton>
+	
+						<RadioButton android:id="@+id/RadioButtonMargueriteBoy" 
+							android:text="boy" 
+							android:layout_height="wrap_content" 
+							android:layout_width="wrap_content"
+							style="@style/MenuTextStyleSmall"></RadioButton>
+					</RadioGroup>
+			</TableRow>
+		</TableLayout>
+</RelativeLayout>

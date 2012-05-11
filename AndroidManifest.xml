@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      android:versionCode="5"
+      android:versionName="1.4"
+      android:installLocation="internalOnly" package="com.craftysoft.flutterbyandmarguerite.pro">
+    <!-- NOOK ONLY = android:installLocation="internalOnly"-->
+	<!-- DEFAULT = android:installLocation="preferExternal" -->
+
+
+    <!--  uses-sdk android:minSdkVersion="3" android:targetSdkVersion="9"/-->
+  	<uses-sdk android:minSdkVersion="8" android:targetSdkVersion="10"/>
+  
+  	<uses-feature android:name="android.hardware.microphone" android:required="false" />
+	<uses-permission android:name="android.permission.RECORD_AUDIO"></uses-permission>
+	<uses-permission android:name="android.permission.INTERNET" />   
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> 
+	<!-- Read that google will not do market filtering for vibrate due to many devices not having it -->
+	<!-- uses-permission android:name="android.permission.VIBRATE"/-->
+	<!-- NOOK ONLY - DISABLE VIBRATE PERMISSION -->
+  
+  	<supports-screens android:xlargeScreens="true" android:normalScreens="true" android:anyDensity="true" android:smallScreens="true" android:largeScreens="true"/>
+    
+    <application android:label="@string/app_name" android:icon="@drawable/icon">
+        <activity android:name="com.craftysoft.flutterbyandmarguerite.SplashScreen"
+                  android:label="@string/app_name" android:screenOrientation="landscape"
+                  android:configChanges="keyboardHidden|orientation" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" 
+                  android:launchMode="standard">
+  
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+    	<activity android:name="com.craftysoft.flutterbyandmarguerite.FlutterbyAndMarguerite" android:screenOrientation="landscape"
+                  android:configChanges="keyboardHidden|orientation" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:launchMode="singleTask"></activity>
+
+    	<activity android:name="com.craftysoft.flutterbyandmarguerite.CurlActivity" android:screenOrientation="landscape"
+                  android:configChanges="keyboardHidden|orientation" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"></activity>
+
+	    <activity android:name="com.craftysoft.flutterbyandmarguerite.OptionMenu" android:screenOrientation="landscape"
+                  android:configChanges="keyboardHidden|orientation" android:theme="@style/CustomOptionMenuTheme2"></activity>
+                  
+	    <activity android:name="com.craftysoft.flutterbyandmarguerite.AudioNarrationSetup" android:screenOrientation="landscape"
+                  android:configChanges="keyboardHidden|orientation" android:theme="@style/AudioNarrationSetup"></activity>
+                  
+		<activity android:name="com.craftysoft.flutterbyandmarguerite.About" android:screenOrientation="landscape"
+                  android:configChanges="keyboardHidden|orientation" android:theme="@style/AudioNarrationSetup"></activity>
+
+	    <activity android:name="com.craftysoft.flutterbyandmarguerite.PageIndex" android:screenOrientation="landscape"
+                  android:configChanges="keyboardHidden|orientation" android:theme="@style/CustomOptionMenuTheme2"></activity>
+                  
+		<activity android:name="com.craftysoft.flutterbyandmarguerite.CharacterAlias" android:screenOrientation="landscape"
+                  android:configChanges="keyboardHidden|orientation" android:theme="@style/AudioNarrationSetup"></activity>                  
+                  
+     </application>
+
+</manifest> 

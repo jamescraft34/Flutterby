@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<style name="NarriationTextStyle">        
+    <item name="android:textColor">#663366</item>        
+    <item name="android:typeface">sans</item> 
+    <item name="android:textSize">17dp</item>  
+    <item name="android:textStyle">bold</item> 
+</style>
+
+<style name="NarriationTextStyleLarge">        
+    <item name="android:textColor">#663366</item>        
+    <item name="android:typeface">sans</item> 
+    <item name="android:textSize">34dp</item>  
+    <item name="android:textStyle">bold</item> 
+</style>
+
+
+<style name="MenuTextStyle">        
+    <item name="android:textColor">#ffffff</item>        
+    <item name="android:typeface">sans</item> 
+    <item name="android:textSize">22dp</item>  
+    <item name="android:textStyle">bold</item> 
+</style>
+
+<style name="MenuTextStyleLarge">        
+    <item name="android:textColor">#ffffff</item>        
+    <item name="android:typeface">sans</item> 
+    <item name="android:textSize">38dp</item>  
+    <item name="android:textStyle">bold</item> 
+</style>
+
+<style name="AliasTextViewStyle">        
+    <item name="android:textColor">#ffffff</item>        
+    <item name="android:typeface">sans</item> 
+    <item name="android:textSize">22dp</item>  
+    <item name="android:textStyle">bold</item> 
+</style>
+
+<style name="AliasEditViewStyle">        
+    <item name="android:textColor">#663366</item>        
+    <item name="android:typeface">sans</item> 
+    <item name="android:textSize">22dp</item>  
+    <item name="android:textStyle">bold</item> 
+</style>
+
+<style name="MenuTextStyleSmall">        
+    <item name="android:textColor">#ffffff</item>        
+    <item name="android:typeface">sans</item> 
+    <item name="android:textSize">16dp</item>  
+    <item name="android:textStyle">bold</item> 
+</style>
+
+<style name="IconTextStyle">        
+    <item name="android:textColor">#ffffff</item>        
+    <item name="android:typeface">sans</item> 
+    <item name="android:textSize">14dp</item>  
+    <item name="android:textStyle">bold</item> 
+</style>
+
+<style name="IconTextStyleLarge">        
+    <item name="android:textColor">#ffffff</item>        
+    <item name="android:typeface">sans</item> 
+    <item name="android:textSize">22dp</item>  
+    <item name="android:textStyle">bold</item> 
+</style>
+
+    <style name="HapticTextStyle">        
+    <item name="android:textColor">#ffffff</item>        
+    <item name="android:typeface">sans</item> 
+    <item name="android:textSize">14dp</item>  
+    <item name="android:textStyle">bold|italic</item> 
+</style>
+
+<style name="HapticTextStyleLarge">        
+    <item name="android:textColor">#ffffff</item>        
+    <item name="android:typeface">sans</item> 
+    <item name="android:textSize">32dp</item>  
+    <item name="android:textStyle">bold|italic</item> 
+</style>
+
+<style name="HapticTextStyleLargeNook">        
+    <item name="android:textColor">#ffffff</item>        
+    <item name="android:typeface">sans</item> 
+    <item name="android:textSize">20dp</item>  
+    <item name="android:textStyle">bold|italic</item> 
+</style>
+
+<style name="AboutTextStyle">        
+    <item name="android:textColor">#ffffff</item>        
+    <item name="android:typeface">sans</item> 
+    <item name="android:textSize">16dp</item>  
+    <item name="android:textStyle">bold</item> 
+</style>
+
+<style name="AboutTextStyleLarge">        
+    <item name="android:textColor">#ffffff</item>        
+    <item name="android:typeface">sans</item> 
+    <item name="android:textSize">42dp</item>  
+    <item name="android:textStyle">bold</item> 
+</style>
+
+<style name="AboutTextStyleLargeNook">        
+    <item name="android:textColor">#ffffff</item>        
+    <item name="android:typeface">sans</item> 
+    <item name="android:textSize">30dp</item>  
+    <item name="android:textStyle">bold</item> 
+</style>
+    
+
+<style name="AboutTextStyleLargeSmall">        
+    <item name="android:textColor">#ffffff</item>        
+    <item name="android:typeface">sans</item> 
+    <item name="android:textSize">32dp</item>  
+    <item name="android:textStyle">bold</item> 
+</style>
+
+<style name="AboutTextStyleSmall">        
+    <item name="android:textColor">#ffffff</item>        
+    <item name="android:typeface">sans</item> 
+    <item name="android:textSize">16dp</item>  
+    <item name="android:textStyle">bold</item> 
+</style>
+
+
+
+<style name="WebLink">        
+    <item name="android:textColor">#6666ff</item>        
+    <item name="android:typeface">sans</item> 
+    <item name="android:textSize">18dp</item>  
+    <item name="android:textStyle">bold</item> 
+</style>
+
+<style name="WebLinkMed">        
+    <item name="android:textColor">#6666ff</item>        
+    <item name="android:typeface">sans</item> 
+    <item name="android:textSize">22dp</item>  
+    <item name="android:textStyle">bold</item> 
+</style>
+
+
+<style name="WebLinkSmall">        
+    <item name="android:textColor">#6666ff</item>        
+    <item name="android:typeface">sans</item> 
+    <item name="android:textSize">16dp</item>  
+    <item name="android:textStyle">bold</item> 
+</style>
+
+<style name="WebLinkLarge">        
+    <item name="android:textColor">#6666ff</item>        
+    <item name="android:typeface">sans</item> 
+    <item name="android:textSize">42dp</item>  
+    <item name="android:textStyle">bold</item> 
+</style>
+
+<style name="WebLinkLargeNook">        
+    <item name="android:textColor">#6666ff</item>        
+    <item name="android:typeface">sans</item> 
+    <item name="android:textSize">30dp</item>  
+    <item name="android:textStyle">bold</item> 
+</style>
+    
+
+<style name="largerow">        
+    <item name="android:textColor">#6666ff</item>        
+    <item name="android:typeface">sans</item> 
+    <item name="android:textSize">32dp</item>  
+    <item name="android:textStyle">bold</item> 
+</style>
+
+
+<style name="ScrollbarTextView">      
+	<item name="android:scrollbarSize">25dp</item>             
+</style> 
+
+<style name="CustomOptionMenuTheme">
+    <item name="android:windowBackground">@android:drawable/screen_background_dark_transparent</item>
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    <item name="android:windowFullscreen">true</item>
+</style>
+
+<style name="CustomOptionMenuTheme2">
+    <item name="android:windowBackground">@android:drawable/screen_background_dark_transparent</item>
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="android:windowNoTitle">true</item>
+	<item name="android:windowAnimationStyle">@android:style/Animation.Toast</item>
+	<item name="android:windowFullscreen">true</item>
+</style>
+
+
+<style name="AudioNarrationSetup">
+    <item name="android:windowBackground">@android:drawable/screen_background_dark_transparent</item>
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="android:windowNoTitle">true</item>
+	<item name="android:windowAnimationStyle">@style/AudioNarrationAnim</item>
+	<item name="android:windowFullscreen">true</item>
+</style>
+
+<style name="AudioNarrationAnim">
+  <item name="android:windowEnterAnimation">@anim/translucent_enter</item> 
+  <item name="android:windowExitAnimation">@anim/translucent_exit</item> 
+</style>
+
+</resources> 

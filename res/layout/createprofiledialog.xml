@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+	<EditText android:id="@+id/EditTextCreateProfile" 
+		android:layout_height="wrap_content" 
+		android:layout_width="fill_parent" 
+		android:maxLength="20" 
+		android:inputType="textCapSentences"
+		android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890" 
+		android:width="280dp" style="@style/AliasEditViewStyle"/>
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" android:id="@+id/FrameRoot">
+    
+    <com.craftysoft.flutterbyandmarguerite.CurlView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:id="@+id/curl" />
+    
+    <Button android:layout_height="wrap_content" 
+	    android:layout_width="wrap_content" 
+	    android:clickable="true" 
+	    android:layout_marginTop="10dp" 
+	    android:id="@+id/ButtonInfo"  
+	    android:background="@drawable/settingslarge" 
+	    android:paddingLeft="10dp" 
+	    android:paddingTop="10dp" 
+	    android:layout_gravity="left" 
+	    android:layout_marginLeft="10dp" android:soundEffectsEnabled="false"/>
+	     
+	<Button android:id="@+id/ButtonBookmark" 
+	 	android:layout_width="wrap_content" 
+	 	android:layout_height="wrap_content" 
+	 	android:background="@drawable/bookmarklarge" 
+	 	android:clickable="true" 
+		android:paddingRight="10dp" 
+	    android:paddingTop="10dp" 
+	    android:layout_marginRight="10dp"
+	    android:layout_marginTop="10dp" 
+	    android:layout_gravity="right" 
+	    android:soundEffectsEnabled="false"/> 
+	        
+</FrameLayout>

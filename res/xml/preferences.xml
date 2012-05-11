@@ -1,0 +1,10 @@
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" android:title="Flutterby">
+
+
+
+
+
+
+<CheckBoxPreference android:title="Test"></CheckBoxPreference>
+</PreferenceScreen>

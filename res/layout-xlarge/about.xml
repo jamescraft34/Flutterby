@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" 
+  android:layout_marginRight="5dp" 
+  android:layout_marginLeft="5dp" 
+  android:layout_marginBottom="10dp" 
+  android:layout_marginTop="10dp"
+  android:paddingLeft="5dp">  
+
+	<TextView 	android:id="@+id/TextViewHeader" 
+				android:layout_alignParentLeft="true" 
+			 	android:text="About" 
+			 	android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_marginLeft="7dp" style="@style/MenuTextStyleLarge" android:layout_marginTop="30dp">
+ 	</TextView>
+
+	<Button android:layout_width="wrap_content" 
+	android:layout_height="wrap_content" 
+	android:clickable="true" 
+	android:layout_alignParentRight="true" 
+	android:layout_marginTop="10dp"
+	android:layout_marginRight="7dp" android:id="@+id/ButtonClose" 
+	android:background="@drawable/closelarge" android:soundEffectsEnabled="true"></Button>
+
+	<View 
+		android:layout_height="4dp" 
+		android:layout_width="fill_parent" 
+		android:id="@+id/ViewLine" 
+		android:background="@drawable/solidlineshape" android:layout_below="@+id/ButtonClose"/>
+		
+	<TableLayout  
+		android:layout_height="wrap_content" 
+		android:id="@+id/TableLayout01" 
+		android:layout_width="fill_parent" 
+		android:paddingLeft="10dp" 
+		android:stretchColumns="1" 
+		android:layout_below="@+id/ViewLine"
+		android:paddingTop="10dp">
+	
+		<TableRow android:layout_height="wrap_content" 
+					android:layout_width="wrap_content" android:paddingBottom="25dp">
+		
+			<TextView android:layout_height="wrap_content" 
+						android:text="Story / Illustrations / Narration:  Marica Chen" 
+						android:layout_width="wrap_content" android:layout_span="2" style="@style/AboutTextStyleLarge"/>
+		</TableRow>
+		<TableRow android:layout_height="wrap_content" 
+					android:layout_width="wrap_content" android:paddingBottom="25dp">
+			<TableLayout android:id="@+id/tableLayout1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+				<TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+					<TextView android:id="@+id/textView1" android:layout_width="wrap_content" style="@style/AboutTextStyleLarge" android:text="Development: " android:layout_height="wrap_content" android:layout_marginRight="5dp"></TextView>
+					<TextView android:layout_marginRight="5dp" android:clickable="true" android:layout_width="wrap_content" style="@style/WebLinkLarge" android:id="@+id/TextViewLink" android:text="CraftySoft" android:layout_height="wrap_content"></TextView>
+				</TableRow>
+			</TableLayout>
+						
+		</TableRow>
+		<TableRow android:layout_height="wrap_content" 
+					android:layout_width="wrap_content" android:paddingBottom="25dp">
+				<TableLayout android:id="@+id/tableLayout2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+					<TableRow android:id="@+id/tableRow2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+						<TextView android:id="@+id/textView2" android:layout_width="wrap_content" style="@style/AboutTextStyleLarge" android:text="Audio Production:" android:layout_height="wrap_content" android:layout_marginRight="25dp"></TextView>
+						<TextView android:layout_marginRight="5dp" android:clickable="true" android:layout_width="wrap_content" style="@style/WebLinkLarge" android:id="@+id/TextViewLinkJam" android:text="Jam Productions" android:layout_height="wrap_content"></TextView>
+					</TableRow>
+				</TableLayout>
+						
+		</TableRow>
+  	</TableLayout>
+
+ 	<TableLayout  
+		android:id="@+id/TableLayout02" 
+		android:layout_height="wrap_content" 
+		android:layout_width="fill_parent" 
+		android:paddingLeft="10dp" 
+		android:stretchColumns="1" 
+		android:layout_below="@+id/TableLayout01">
+				
+		<TableRow android:layout_height="wrap_content" 
+					android:layout_width="wrap_content">
+			
+				<TextView android:layout_height="wrap_content" 
+						android:text="Visit the user guide: " 
+						android:layout_width="wrap_content" android:layout_marginRight="25dp" style="@style/AboutTextStyleLarge"/>
+
+
+				<TextView android:id="@+id/TextViewBlogLink" android:layout_height="wrap_content" 
+						android:text="www.craftysoft.me/flutterby.html" 
+						android:layout_width="wrap_content" android:clickable="true" style="@style/WebLinkLarge"/>
+		</TableRow>
+	</TableLayout>
+ 	<TableLayout  
+		android:id="@+id/TableLayout03" 
+		android:layout_height="wrap_content" 
+		android:layout_width="wrap_content" 
+		android:paddingLeft="10dp" 
+		android:layout_below="@+id/TableLayout02" android:paddingTop="25dp">
+	
+		<TableRow android:layout_height="wrap_content" 
+					android:layout_width="wrap_content">		
+		
+				<TextView 
+						android:layout_height="wrap_content" 
+						android:text="Questions / Feedback: " 
+						android:layout_width="wrap_content" 
+						android:layout_gravity="center_vertical" 
+						android:gravity="center_vertical" style="@style/AboutTextStyleLarge" android:layout_marginRight="25dp"/>
+
+
+				<Button android:id="@+id/ButtonEmailLink"  
+						android:layout_height="wrap_content" 
+						android:layout_width="wrap_content" 
+						android:clickable="true" android:background="@drawable/maillarge"/>
+		</TableRow>
+ 	</TableLayout>
+ 	
+
+ 	<TableLayout   
+ 	    android:id="@+id/TableLayout04"
+		android:layout_height="wrap_content" 
+		android:layout_width="wrap_content" 
+		android:paddingLeft="10dp"
+		android:paddingTop="15dp"  
+		android:layout_below="@+id/TableLayout03" 
+		android:layout_alignParentLeft="true">
+	
+		<TableRow android:layout_height="wrap_content" 
+					android:layout_width="wrap_content">		
+		
+				<TextView 
+						android:layout_height="wrap_content" 
+						android:text="ISBN: 978-0-615-46687-3" 
+						style="@style/AboutTextStyleLarge" 
+						android:layout_width="wrap_content" 
+						android:layout_marginRight="5dp" 
+						android:layout_gravity="center_vertical" 
+						android:gravity="center_vertical"/>
+								</TableRow>
+		<TableRow android:layout_height="wrap_content" 
+					android:layout_width="wrap_content">		
+						
+				<TextView 
+						android:layout_height="wrap_content" 
+						android:text="&#169; 2011 Flutterby" 
+						style="@style/AboutTextStyleLarge" 
+						android:layout_width="wrap_content" 
+						android:layout_marginRight="5dp" 
+						android:layout_gravity="center_vertical" 
+						android:gravity="center_vertical"/>
+		</TableRow>
+ 	</TableLayout>
+ 	
+ 	     	<TableLayout  
+ 	    android:id="@+id/TableLayouthaptic" 
+		android:layout_height="wrap_content" 
+		android:layout_width="fill_parent" 
+		android:paddingLeft="10dp" 
+		android:stretchColumns="1" 
+		android:layout_below="@+id/TableLayout04"
+		android:paddingTop="10dp">
+				
+		<TableRow android:layout_height="wrap_content" 
+					android:layout_width="wrap_content">
+			
+				<TextView android:layout_height="wrap_content" 
+						android:layout_width="wrap_content" 
+						style="@style/HapticTextStyleLarge" 
+						android:text="Integrated with Immersion MOTIV Haptic Effects "/>
+		</TableRow>
+	</TableLayout>
+ 	    
+ 	    
+</RelativeLayout>
